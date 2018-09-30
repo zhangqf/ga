@@ -1,0 +1,72 @@
+#header{
+    width: 100%;
+    height: 1.066667rem;
+    background: #5faced;
+    position: relative;
+}
+.logo{
+    width: 100%;
+    height: 100%;
+}
+.ui-title{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: .48rem;
+    color: #fff;
+    text-align: center;
+    line-height: 1.066667rem;
+}
+.back{
+    position: absolute;
+    left: .266667rem;
+    width: .283333rem;
+    height: .586667rem;
+    top: .253333rem;
+}
+.ui-menu-name{
+    width: 100%;
+    height: 1.24rem;
+    background: #f5f5f9;
+    font-size: .373333rem;
+    color: #333;
+    text-indent: 1em;
+    font-weight: bold;
+    line-height: 1.24rem;
+}
+.ui-menu{
+    width: 100%;
+    height: 5.386667rem;
+    background: #fff;
+}
+.ui-menu-ul{
+    width: 100%;
+    height: 100%;
+
+}
+.ui-menu-li{
+    width: 25%;
+    height: 2.473333rem;
+    float: left;
+    
+}
+.ui-menu-li-a{
+    display: block;
+    height: 100%;
+    overflow: hidden;
+}
+.ui-menu-icon{
+    display: block;
+    width: 1.373333rem;
+    height: 1.373333rem;
+    margin: .4rem .586667rem 0 .586667rem;
+}
+.ui-menu-sp{
+    display: block;
+    width: 100%;
+    height: .82rem;
+    font-size: .346667rem;
+    line-height:.82rem;
+    text-align: center;
+    color: #333;
+}

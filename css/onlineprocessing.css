@@ -1,0 +1,158 @@
+*{
+	padding:0;
+	margin:0;
+}
+html{
+	font-size: 13.33vw;
+	height:100%;
+}
+body{
+	height:100%;
+	font-family: "[PingFang]";	
+	display: flex;
+	flex-direction: column;
+	background: #f5f5f9;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+img{
+	border:none;
+}
+.ui-header{
+	
+	width:100%;
+	height:.88rem;
+	
+}
+.ui-log{
+	position: relative;
+	height:.88rem;
+	background: #57a8ec;
+	padding: 0rem .24rem;
+	font-size: 0px;
+}
+.ui-log select{
+	position: absolute;
+	right:.4rem;
+	z-index: 1;
+	appearance: none;
+	-moz-appearance:none;  
+    -webkit-appearance:none;
+    height:.88rem;
+    padding-right: .3rem;
+	font-size: .28rem;
+	color:#ffffff;
+	border:none;
+	outline: none;
+	line-height: .88rem;
+	background:url(../images/select.png) no-repeat scroll right center transparent;
+	background-size: .2rem .12rem; 
+}
+.ui-log select option{
+	background:#57a8ec;
+}
+.back{
+    position: absolute;
+    left: .266667rem;
+    width: .333333rem;
+    height: .586667rem;
+    top: .193333rem;
+    z-index: 100;
+}
+.ui-log .ui-title{
+	position: absolute;
+	left:0px;
+	bottom: .2rem;
+	width:100%;
+	font-size: .36rem;
+	color:#ffffff;
+	text-align: center;
+}
+
+
+
+
+
+
+.ui-content{
+	width:100%;
+	flex:1;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+ul{
+	width: 88%;
+	padding-left: 2%;
+	padding-right: 2%;
+	margin-left: auto;
+	margin-right:auto;
+	font-size: 0;
+}
+.ui-contenttitle{
+	font-size: .28rem;
+	/*width: 1.16rem;*/
+	width: .65rem;
+	padding:.22rem .30rem;
+	display: inline-block;
+	font-weight: bold;
+	height: .66rem;
+	border-right:.01rem solid #f0f0f0;
+	vertical-align: top;
+}
+li{
+	padding:.12rem 0;
+	margin-top:.20rem;
+	background: #fff;
+	border-radius: .16rem;
+}
+.ui-detail{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: .24rem;
+	width: 74%;
+}
+h5{
+	font-size: .28rem;
+	color: #333333;
+	line-height: .68rem;
+	/*font-weight: normal;*/
+}
+p{
+	line-height: .30rem;
+	font-size: .24rem;
+	color: #666666;
+}
+span{
+	float: right;
+}
+
+
+
+.ui-footer{
+	width:100%;
+	height:1rem;
+	border-top:solid 1px #f0f0f0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.ui-footer a{
+	font-size: 0.22rem;
+	color:#555;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.ui-footer a img{
+	width:0.44rem;
+	height:0.44rem;
+	margin-bottom: 0.1rem;
+}
+.ui-footer a.active{
+	color:#5FACED;
+}

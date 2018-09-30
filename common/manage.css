@@ -1,0 +1,83 @@
+*{
+	padding:0;
+	margin:0;
+}
+html{
+	font-size: 13.33vw;
+	height:100%;
+}
+body{
+	height:100%;
+	font-family: "[PingFang]";	
+	display: flex;
+	flex-direction: column;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+img{
+	border:none;
+}
+.ui-header{
+	width:100%;
+	height:0.88rem;
+	background: #5faced;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.ui-header a img{
+	width:0.3rem;
+	height:0.44rem;
+	padding:0.18rem 0;
+	margin-left:0.32rem;	
+}
+.ui-header span{
+	margin-left: 2.1rem;
+	font-size: 0.36rem;
+	color:#fff;
+	font-weight: 600;	
+}
+.ui-content{
+	width:100%;
+	flex:1;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: #f5f5f9;
+}
+.ui-content ul{
+	width:100%;
+}
+.ui-content ul li{
+	width:7.1rem;
+	height:1.44rem;
+	padding:0 0.2rem;
+	margin-top:0.22rem;
+	background: #fff;	
+}
+.ui-content li a{
+	color:#3a3a3a;
+	font-size: 0.3rem;
+	display: inline-block;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+.ui-content li a img:first-child{
+	width:1.04rem;
+	height:1.04rem;
+	padding:0.2rem 0;
+}
+.ui-content li a span{
+	position: absolute;
+	top:0.56rem;
+	left:1.62rem;
+}
+.ui-content li a img:last-child{
+	height:0.26rem;
+	padding:0.59rem 0;
+}

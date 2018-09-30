@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="css/police_report.css" />
+		<title>举报</title>
+		<script src="http://files.risun-tec.cn/js/build/base.js?stamp=20160727" type="text/javascript"></script>
+		<script src="js/config.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="ui-header">
+			<i class="back ">
+			        <a href="javascript:;" onclick="javascript:history.back(-1)" class="backto">
+			            <img src="images/return.png" alt="" style="width: 80%">
+			        </a>
+    			</i>
+			<div class="ui-title">举报</div>
+			<select>
+				<option value="">天水</option>
+				<option value="">秦州区</option>
+				<option value="">麦积区</option>
+				<option value="">清水县</option>
+				<option value="">秦安县</option>
+				<option value="">张家川</option>
+				<option value="">甘谷县</option>
+				<option value="">武山县</option>
+			</select>
+		</div>
+		<div class="ui-container">
+			<div class="ui-upload img">
+				<h4>上传图片</h4>
+				<!--最多上传三张-->
+					<div class="ui-upload-img">
+						<div class="ub umar-t-ec3  J-upload" style="width:100%;height:100%; overflow:hidden; margin:0 auto;" ></div>
+					</div>
+					
+					<!-- <li>
+						<div class="ui-upload-img">
+					   <div class="ub-img uwh-bg  umar-r-ect J-img ">
+                            <a href="javascript:void(0);" class="upload_delete" title="删除"></a>
+                            <img src="images/12340_03.jpg" height="100%" width="100%" class="J-imgUpload-img show_Img">
+                            <input type="text" value="" class="J-imgSrc" style="visibility:hidden; position:absolute;">
+                        </div>
+                        <div class="ub umar-t-ec3  J-upload" style="width:100%;height:100%; overflow:hidden; margin:0 auto;">
+                            <input id="logoImg" name="projectPic" type="hidden" value="@(Model == null ? "" : Model.projectPic)" />
+                        </div>    
+                        </div>
+                     
+					</li> -->
+			</div>
+			<div class="ui-upload video">
+				<h4>
+					上传视频
+				</h4>
+				<ul class="ui-uploadlist videolist">
+					<li>
+						<img src="images/12340_03.jpg" alt="" />
+					</li>
+					<li>
+						<img src="images/12340_03.jpg" alt="" />
+					</li>
+				</ul>
+			</div>
+			<div class="ui-currentaddr">
+				<h4>发生单位</h4>
+				<input type="text" name="" id="" value="" placeholder="请输入发生单位"/>
+				<h4>发生地址</h4>
+				<input type="text" name="" id="" value="" placeholder="请输入发生地址"/>
+				<h4>时间描述</h4>
+				<textarea type="text" name="" id="" value="" placeholder="请输入内容"></textarea>
+			</div>
+			<div class="ui-btn">
+				<a href="" class="ui-btn-submit">举报</a>
+			</div>
+		</div>
+		
+	<script>
+		Util.url.init();
+		Utils.imgUpload({
+			maxLength: 3
+		}); 
+	</script>
+   
+	</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" href="css/police_broadcast.css" />
+		<title>警讯播报</title>
+	</head>
+	<body>
+		<div class="ui-header">
+			<i class="back ">
+			        <a href="javascript:;" onclick="javascript:history.back(-1)" class="backto">
+			            <img src="images/return.png" alt="" style="width: 80%">
+			        </a>
+    			</i>
+			<select>
+				<option value="">天水</option>
+				<option value="">秦州区</option>
+				<option value="">麦积区</option>
+				<option value="">清水县</option>
+				<option value="">秦安县</option>
+				<option value="">张家川</option>
+				<option value="">甘谷县</option>
+				<option value="">武山县</option>
+			</select>
+			<div class="ui-title">警讯播报</div>
+		</div>
+		<div class="ui-content">
+			<div class="ui-nav">
+				<div class="ui-nav-select">警方提示</div>
+				<div>警情通告</div>
+				<div>警情通告</div>
+			</div>
+			<div class="ui-section">
+				<ul>
+					<li>
+						<a href="#">
+							<p class="ui-title">天水市表彰首届“十大青年消防卫士”</p>
+							<p><span class="ui-position">天水市公安局</span><span class="ui-time">2018.09.26</span></p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p class="ui-title">天水市公安局组织开展在职党员先锋行志愿服务活动</p>
+							<p><span class="ui-position">天水市公安局</span><span class="ui-time">2018.09.26</span></p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p class="ui-title">天水市公安局召开继续深入开展“治乱除癣·净化城市 治安交通环境”专项行动助力创城活动推进会…</p>
+							<p><span class="ui-position">天水市公安局</span><span class="ui-time">2018.09.26</span></p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p class="ui-title">天水市公安局组织开展天水市公安局组织开展在职党员 先锋行志愿服务活动</p>
+							<p><span class="ui-position">天水市公安局</span><span class="ui-time">2018.09.26</span></p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p class="ui-title">天水市公安局组织开展在职党员先锋行志愿服务活动 </p>
+							<p><span class="ui-position">天水市公安局</span><span class="ui-time">2018.09.26</span></p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p class="ui-title">天水市公安局召开继续深入开展“治乱除癣·净化城市 治安交通环境”专项行动助力创城活动推进会… </p>
+							<p><span class="ui-position">天水市公安局</span><span class="ui-time">2018.09.26</span></p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p class="ui-title">天水市表彰首届“十大青年消防卫士” </p>
+							<p><span class="ui-position">天水市公安局</span><span class="ui-time">2018.09.26</span></p>
+						</a>
+					</li>
+				</ul>
+				<ul class="ui-noShow">
+					<li>
+						<a href="#">
+							<p class="ui-title">天水市表彰首届“十大青年消防卫士”</p>
+							<p><span class="ui-position">天水市公安局</span><span class="ui-time">2018.09.26</span></p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p class="ui-title">天水市公安局组织开展在职党员先锋行志愿服务活动</p>
+							<p><span class="ui-position">天水市公安局</span><span class="ui-time">2018.09.26</span></p>
+						</a>
+					</li>
+				</ul>
+				<ul class="ui-noShow">
+					<li>
+						<a href="#">
+							<p class="ui-title">天水市表彰首届“十大青年消防卫士”</p>
+							<p><span class="ui-position">天水市公安局</span><span class="ui-time">2018.09.26</span></p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p class="ui-title">天水市公安局组织开展在职党员先锋行志愿服务活动</p>
+							<p><span class="ui-position">天水市公安局</span><span class="ui-time">2018.09.26</span></p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p class="ui-title">天水市公安局组织开展在职党员先锋行志愿服务活动</p>
+							<p><span class="ui-position">天水市公安局</span><span class="ui-time">2018.09.26</span></p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<script>
+			$('.ui-nav div').click(function(){
+				var index=$(this).index();
+				$(this).addClass('ui-nav-select').siblings().removeClass('ui-nav-select');
+				$(".ui-section ul").eq(index).removeClass('ui-noShow').siblings().addClass('ui-noShow')
+			})
+		</script>
+	</body>
+</html>

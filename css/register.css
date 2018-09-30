@@ -1,0 +1,99 @@
+#container{
+    background: #fff;
+}
+.ui-head{
+   width: 100%;
+   height: 5.76rem;
+   background: url('../images/bg.jpg') no-repeat; 
+   background-size:100% 100%; 
+   overflow: hidden;
+}
+.ui-logo{
+    width: 3.08rem;
+    height: 3.053333rem;
+    display: block;
+    margin: .4rem auto;
+}
+.ui-login{
+    width: 9.226667rem;
+    /*height: 8.026667rem;*/
+    margin: -1.92rem auto 0;
+    background: #fff;
+    box-shadow: 0.02rem .26rem .70rem #ddeeff;
+    border-radius: .30rem;
+    overflow: hidden;
+}
+.ui-login-k:nth-child(1){
+    margin-top: .7rem;
+}
+.ui-login-k{
+    width: 8.24rem;
+    height: 1.146667rem;
+    background: #f6f6f6;
+    margin: .333333rem auto .333333rem;
+}
+.ui-login-name{
+    display: block;
+    float: left;
+    width: .733333rem;
+    height: .653333rem;
+    margin: 0.25rem 0.2rem;
+}
+.ui-input{
+    width: 75%;
+    float: left;
+    height: 100%;
+    border: 0;
+    background: #f7f7f7;
+}
+.ui-dl{
+    width: 8.24rem;
+    height: 1.146667rem;
+    background: #4dbcfb;
+    font-size: .4rem;
+    color: #fff;
+    line-height:1.146667rem;
+    text-align: center;
+    display: block;
+    margin: .986667rem auto 0;
+}
+.ui-option{
+    width: 8.24rem;
+    height: 1.093333rem;
+    margin: 0 auto;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.ui-regsiter{
+    font-size: .373333rem;
+    color: #4dbcfb;
+    line-height: 1.093333rem;
+}
+.ui-kjlogin{
+    width: 8.253333rem;
+    height: 2.44rem;
+    
+    margin: 2.266667rem auto 0;
+}
+.ui-kjlogin-img{
+    display: block;
+    width: 100%;
+    height: .786667rem;
+}
+.ui-tubiao{
+    display: block;
+    float: left;
+    width: .84rem;
+    height: .76rem;
+        margin: 0.2rem 0.9rem;
+}
+#demo_img{
+    float: left;
+    width: .52rem;
+    height: .48rem;
+    margin: .3rem .2rem;
+}

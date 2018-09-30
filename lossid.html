@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>lossid</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/lossid.css"/>
+		<link rel="stylesheet" type="text/css" href="common/LCalendar.min.css"/>
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+	</head>
+	<body>
+		<div class="ui-header">
+		
+			<div class="ui-log">
+				<i class="back ">
+			        <a href="javascript:;" onclick="javascript:history.back(-1)" class="backto">
+			            <img src="images/return.png" alt="" style="width: 80%">
+			        </a>
+    			</i>
+				
+				<div class="ui-title">身份证挂失</div>
+				<select>
+					<option value="">天水</option>
+					<option value="">秦州区</option>
+					<option value="">麦积区</option>
+					<option value="">清水县</option>
+					<option value="">秦安县</option>
+					<option value="">张家川</option>
+					<option value="">甘谷县</option>
+					<option value="">武山县</option>
+				</select>
+			</div>
+		</div>
+		<div class="ui-content">
+			<ul>
+				<li>
+					<pre>姓    名</pre> <input type="text" placeholder="请输入姓名" />
+				</li>
+				<li>
+					<pre>电    话</pre> <input type="text" placeholder="请输入联系电话" />
+				</li>
+				<li>
+					<pre>身份证号</pre> <input type="text" placeholder="请输入身份证号" />
+				</li>
+				<li>
+					<pre>签发机关</pre> <input type="text" placeholder="请输入签发机关" />
+				</li>
+				<li >
+					<pre>有 效 期</pre>	
+					<input type="text" class="input-data" id="demo1" readonly="readonly"/><i>-- </i>
+					<input type="text" class="input-data" id="demo2" style="margin:0" readonly="readonly"/>
+				</li>
+				<li>
+					<pre>挂失原因</pre> <textarea type="text" placeholder="请输入原因" /></textarea>
+				</li>
+				<li>
+					<pre>备    注</pre> <textarea type="text" placeholder="请输入内容" /></textarea>
+				</li>
+				
+			</ul>
+			<div class="ui-btn">
+				<a href="" class="ui-btn-submit">提交</a>
+			</div>
+		</div>
+		<div class="ui-footer">
+			<a href="index" class="active"><img src="images/jxhome.png"><span>首页</span></a>
+			<a href="serviceguide.html"><img src="images/jxzn.png"><span>业务指南</span></a>
+			<a href="newscenter.html"><img src="images/jxnew.png"><span>新闻中心</span></a>
+			<a href=""><img src="images/jxuser1.png"><span>个人中心</span></a>
+		</div>
+		<script src="common/LCalendar.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var calendar = new LCalendar();
+				calendar.init({
+				    'trigger': '#demo1',//标签id
+				    'type': 'date',//date 调出日期选择 datetime 调出日期时间选择 time 调出时间选择 ym 调出年月选择
+				    'minDate':'1900-1-1',//最小日期 注意：该值会覆盖标签内定义的日期范围
+				});
+			var calendar1 = new LCalendar();
+				calendar1.init({
+				    'trigger': '#demo2',//标签id
+				    'type': 'date',//date 调出日期选择 datetime 调出日期时间选择 time 调出时间选择 ym 调出年月选择
+				    'minDate':'1900-1-1',//最小日期 注意：该值会覆盖标签内定义的日期范围
+				});
+		</script>
+	</body>
+</html>

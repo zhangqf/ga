@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>天水公安</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <script src="http://files.risun-tec.cn/js/build/base.js?stamp=20160727" type="text/javascript"></script>
+    <script type="text/javascript" src="js/flexible.debug.js"></script>
+    <script type="text/javascript" src="js/flexible.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+</head>
+
+<body>
+    <!-- <div id="user">
+</div>
+<div id="header">
+    <i class="search_open">
+        <a href="">
+            <img src="images/person.png" alt="" class="ui-person">
+        </a>
+    </i>
+    <div class="logo">
+        <span class="ui-title">天水市红十字会爱心公社</span>
+    </div>
+    <i class="back ">
+        <a href="javascript:;" onclick="javascript:history.back(-1)" class="backto">
+            <img src="images/return.png" alt="" style="width: 90%">
+        </a>
+    </i>
+</div> -->
+    <div id="container">
+        <div class="ui-head">
+            <img src="images/logo.png" alt="" class="ui-logo">
+        </div>
+        <div class="ui-login">
+        	<div class="ui-login-k">
+                <img src="images/name.png" alt="account" class="ui-login-name">
+                <input type="text" class="ui-input" placeholder="请输入姓名">
+            </div>
+            <div class="ui-login-k">
+                <img src="images/name.png" alt="account" class="ui-login-name">
+                <input type="text" class="ui-input" placeholder="请输入证件号码">
+            </div>
+            <div class="ui-login-k">
+                <img src="images/name.png" alt="account" class="ui-login-name">
+                <input type="text" class="ui-input" placeholder="请输入手机号">
+            </div>
+            <div class="ui-login-k">
+                <img src="images/name.png" alt="account" class="ui-login-name">
+                <select type="text" class="ui-input" placeholder="请输入选择户籍所在地">
+                	<option value="">请选择户籍所在地</option>
+                	<option value="">1</option>
+                	<option value="">2</option>
+                	<option value="">3</option>
+                </select>
+            </div>
+            <div class="ui-login-k">
+                <img src="images/password.png" alt="account" class="ui-login-name">
+                <input type="password" class="ui-input" id="demo_input" placeholder="请输入密码">
+                <img src="images/an.png" alt="" id="demo_img" onclick="hideShowPsw()">
+            </div>
+            <div class="ui-login-k">
+                <img src="images/password.png" alt="account" class="ui-login-name">
+                <input type="password" class="ui-input" id="" placeholder="请再次输入密码">
+ 
+            </div>
+            <a href="" class="ui-dl">确认</a>
+            <div class="ui-option">
+                <a href="" class="ui-regsiter fl">登录账号</a>
+                <a href="" class="ui-regsiter fr">忘记密码</a>
+            </div>
+        </div>
+        <!--<div class="ui-kjlogin">
+            <img src="images/menu-login.png" alt="" class="ui-kjlogin-img">
+            <a href="">
+                <img src="images/wecheat.png" alt="" class="ui-tubiao">
+            </a>
+            <a href="">
+                <img src="images/qq.png" alt="" class="ui-tubiao">
+            </a>
+            <a href="">
+                <img src="images/weibo.png" alt="" class="ui-tubiao">
+            </a>
+        </div>-->
+    </div>
+    <!-- <footer class="page-footer fixed-footer" id="footer">
+    <ul>
+        <li class="active">
+            <a href="index.html">
+                <div class="ui-icon home activebg"></div>
+                <p>首页</p>
+            </a>
+        </li>
+        <li>
+            <a href="list.html">
+                <div class="ui-icon juanzen"></div>
+                <p>捐赠活动</p>
+            </a>
+        </li>
+        <li>
+            <a href="shopcar.html">
+                <div class="ui-icon huzhu"></div>
+                <p>互助计划</p>
+            </a>
+        </li>
+        <li>
+            <a href="shopcar.html">
+                <div class="ui-icon vip"></div>
+                <p>会员专享</p>
+            </a>
+        </li>
+    </ul>
+</footer> -->
+    <script type="text/javascript">
+        // 这里使用最原始的js语法实现，可对应换成jquery语法进行逻辑控制	
+        var demoImg = document.getElementById("demo_img");
+        var demoInput = document.getElementById("demo_input");
+        //隐藏text block，显示password block	
+        function hideShowPsw() {
+            if (demoInput.type == "password") {
+                demoInput.type = "text";
+                demo_img.src = "images/ming.png";
+            } else {
+                demoInput.type = "password";
+                demo_img.src = "images/an.png";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

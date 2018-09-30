@@ -1,0 +1,237 @@
+@charset "utf-8";
+*{
+	padding:0px;
+	margin: 0px;
+	font-family: "[PingFang]";
+}
+ul{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+::-webkit-scrollbar{
+	display: none;
+}
+html{
+	width:100%;
+	height:100%;
+	font-size: 13.33vw;
+}
+body{
+	width:100%;
+	height:100%;
+	display: flex;
+	background: #f5f5f9;
+	flex-direction: column;
+}
+.ui-header{
+	position: relative;
+	height:.88rem;
+	background: #57a8ec;
+	padding: 0rem .24rem;
+	font-size: 0px;
+}
+.ui-header select{
+	position: absolute;
+	z-index: 1;
+	right: .4rem;
+	appearance: none;
+	-moz-appearance:none;  
+    -webkit-appearance:none;
+    height:.88rem;
+    padding-right: .3rem;
+	font-size: .28rem;
+	color:#ffffff;
+	border:none;
+	outline: none;
+	line-height: .88rem;
+	background:url(../images/select.png) no-repeat scroll right center transparent;
+	background-size: .2rem .12rem; 
+}
+.back {
+    position: absolute;
+    left: .266667rem;
+    width: .333333rem;
+    height: .586667rem;
+    top: .193333rem;
+    z-index: 100;}
+.ui-header select option{
+	background:#57a8ec;
+}
+.ui-header .ui-title{
+	position: absolute;
+	left:0px;
+	bottom: .2rem;
+	width:100%;
+	font-size: .36rem;
+	color:#ffffff;
+	text-align: center;
+}
+.ui-container{
+	background: #f5f5f9;
+	height: auto;
+	overflow: scroll;
+	flex: 1;
+}
+h4{
+	font-size: .28rem;
+	line-height: .82rem;
+	width: 94%;
+	margin-left: auto;
+	margin-right: auto;
+	color: #333333;
+	text-indent: .4rem;
+}
+ul.ui-uploadlist{
+	width: 86%;
+	padding:4%;
+	margin-left: auto;
+	margin-right: auto;
+	background: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: .16rem;	
+}
+ul.ui-uploadlist li{
+	width: 2rem; 
+	height: 2rem;
+	padding-bottom: .12rem;
+	padding-top: .12rem;
+	border-radius: .16rem;
+}
+ul.ui-uploadlist li:nth-of-type(3n-1){
+	
+	margin-left: .22rem;
+	margin-right: .22rem;
+	}
+ul.ui-uploadlist img{
+	width: 2rem; 
+}
+.ui-currentaddr>input{
+	width: 90%;
+	padding-left: 2%;
+	padding-right: 2%;
+	outline: none;
+	height: .76rem;
+	font-size: .28rem;
+	margin-left: auto;
+	text-indent: .2rem;
+	margin-right: auto;
+	display: block;
+	border:none;
+	border-radius: .16rem;
+	background: #FFFFFF;
+}
+.ui-currentaddr>input::-webkit-input-placeholder{
+	color: #b5b5b5;
+}
+
+a.ui-btn-submit{
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: .34rem;
+	text-align: center;
+	display: block;
+	width: 88%;
+	height: .76rem;
+	line-height: .76rem;
+	margin-top:.74rem;
+	margin-bottom:.74rem;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: .16rem;
+	background: #57a8ec;
+}
+.ub-img {
+    float: left;
+    width: 2rem;
+    height: 2rem;
+    /*margin-right: .266667rem;
+    margin-bottom: .266667rem;*/
+    position: relative;
+}
+	
+
+.ub-img.uwh-bg.umar-r-ect.J-img{
+	margin-right: .22rem;
+}
+.ub-img.uwh-bg.umar-r-ect.J-img:nth-of-type(3){
+	margin-right:0;
+}
+.upload_delete {
+    display: block;
+    width: .533333rem;
+    height: .533333rem;
+    position: absolute;
+    right: 0;
+    background: rgba(0, 0, 0, .3);
+    color: #fff;
+    font-size: .266667rem;
+    line-height: .533333rem;
+    text-align: center;
+}
+
+.ub-img:nth-last-child(1) {
+    margin-right: .0;
+    margin-bottom: .0;
+}
+
+.ub-img:nth-child(3n) {
+    margin-right: .0;
+
+}
+
+td,
+th {
+    float: right;
+}
+
+.ui-upload-img {
+    margin: 0% 0%;
+    width: 86%;
+    padding:4%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: .16rem;
+    height: auto;
+    /* border-radius: 50%; */
+    /* clear: both; */
+    /*float: left;*/
+    position: relative;
+    background: #fff;
+    
+}
+
+.ke-inline-block,
+.J-imgUpload-file {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+textarea{
+	
+	border:none;
+	outline: none;
+	 margin-left: .6rem;
+	 width: 90%;
+	 padding-top:2%;
+	  padding-bottom:2%;
+	 padding-left: 2%;
+    padding-right: 2%;
+    margin-left: auto;
+    margin-right: auto;
+	 height: 2rem;
+	 line-height: 0.4rem;
+	 resize:none;
+	 display: block;
+	 text-indent: .2rem;
+	 border-radius: .16rem;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>residencepermitapplication</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/residencepermitapplication.css"/>
+		<link rel="stylesheet" type="text/css" href="common/LCalendar.min.css"/>
+		<script src="http://files.risun-tec.cn/js/build/base.js?stamp=20160727" type="text/javascript"></script>
+		<script src="js/config.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="ui-header">
+		
+			<div class="ui-log">
+				<i class="back ">
+			        <a href="javascript:;" onclick="javascript:history.back(-1)" class="backto">
+			            <img src="images/return.png" alt="" style="width: 80%">
+			        </a>
+    			</i>
+				
+				<div class="ui-title">居住证申请登记表</div>
+				<select>
+					<option value="">天水</option>
+					<option value="">秦州区</option>
+					<option value="">麦积区</option>
+					<option value="">清水县</option>
+					<option value="">秦安县</option>
+					<option value="">张家川</option>
+					<option value="">甘谷县</option>
+					<option value="">武山县</option>
+				</select>
+			</div>
+		</div>
+		<div class="ui-content">
+			<ul>
+				<li>
+					<pre style="text-align: center;">近期一寸彩照</pre>
+					<!--<div class="ui-upload-img">
+						<div class="ub umar-t-ec3  J-upload" style="width:100%;height:100%; overflow:hidden; margin:0 auto;" ></div>
+					</div>-->
+					<div class="imgupload">
+						<img src="wgtRes/addImg.png"/>
+					</div>
+				</li>
+				<li>
+					<pre>姓    名</pre><input type="text" placeholder="请输入姓名" />
+				</li>
+				<li>
+					<pre>性    别</pre> 
+					<input type="radio" name="sex" id="male" value="" /><label for="male">男</label>
+					<input type="radio" name="sex" id="female" value="" /><label for="female">女</label>
+				</li>
+				<li>
+					<pre>出生日期</pre> <input type="text" placeholder="请输入身份证号" />
+				</li>
+				<li>
+					<pre>婚姻状况</pre> 
+					<input type="radio" name="marry" id="married" value="" /><label for="married">已婚</label>
+					<input type="radio" name="marry" id="unmarried" value="" /><label for="unmarried">未婚</label>
+				</li>
+				<li >
+					<pre>政治面貌</pre>
+					<input type="radio" name="political " id="party" value="" /><label for="party">党员</label>
+					<input type="radio" name="political " id="members" value="" /><label for="members">团员</label>
+					<input type="radio" name="political " id="masses" value="" /><label for="masses">群众</label>
+				
+				</li>
+				<li>
+					<pre>文化程度</pre>
+					<select name="" id="" class="education">
+						<option value="">初中</option>
+						<option value="">高中</option>
+						<option value="">技工学校</option>
+						<option value="">中等专业学院</option>
+						<option value="">大学专科</option>
+						<option value="">大学本科</option>
+						<option value="">研究生、博士</option>
+					</select>
+				</li>
+				<li>
+					<pre>户口类型</pre>
+					<select name="" id="" class="education">
+						<option value="">户口1</option>
+						<option value="">户口3</option>
+						<option value="">户口2</option>
+					</select>
+				</li>
+					<li>
+					<pre>居住方式</pre>
+					<select name="" id="" class="education">
+						<option value="">方式1</option>
+						<option value="">方式2</option>
+						<option value="">方式3</option>
+					</select>
+				</li>
+				<li>
+					<pre>居住事由</pre> <textarea type="text" placeholder="请输入内容" /></textarea>
+				</li>
+				<li>
+					<pre>户籍地详细地址</pre> <textarea type="text" placeholder="请输入内容" /></textarea>
+				</li>
+				<li>
+					<pre>现居住详细地址</pre> <textarea type="text" placeholder="请输入内容" /></textarea>
+				</li>
+				<li>
+					<pre>房屋信息编号</pre> <textarea type="text" placeholder="请输入内容" /></textarea>
+				</li>
+				<li>
+					<pre>来甘时间</pre><input type="text" placeholder="" id="taketime" readonly="readonly"/>
+				</li>
+				<li>
+					<pre>入住时间</pre><input type="text" placeholder="" id="checkintime"  readonly="readonly"/>
+				</li>
+				<li>
+					<pre>联系电话</pre><input type="text" placeholder="" />
+				</li>
+				<li>
+					<pre>其他联系人</pre><input type="text" placeholder="" />
+				</li>
+					<li>
+					<pre>其他联系人电话</pre><input type="text" placeholder="" />
+				</li>
+				<div class="ui-btn">
+					<a href="" class="ui-btn-submit">提交</a>
+			    </div>
+				
+			</ul>
+		</div>
+		<div class="ui-footer">
+			<a href="index" class="active"><img src="images/jxhome.png"><span>首页</span></a>
+			<a href="serviceguide.html"><img src="images/jxzn.png"><span>业务指南</span></a>
+			<a href="newscenter.html"><img src="images/jxnew.png"><span>新闻中心</span></a>
+			<a href=""><img src="images/jxuser1.png"><span>个人中心</span></a>
+		</div>
+		<script>
+		Util.url.init();
+		Utils.imgUpload({
+			maxLength: 1
+		}); 
+	</script>
+	<script src="common/LCalendar.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var calendar = new LCalendar();
+				calendar.init({
+				    'trigger': '#checkintime',//标签id
+				    'type': 'date',//date 调出日期选择 datetime 调出日期时间选择 time 调出时间选择 ym 调出年月选择
+				    'minDate':'1900-1-1',//最小日期 注意：该值会覆盖标签内定义的日期范围
+				});
+		var calendar2 = new LCalendar();
+		calendar2.init({
+		    'trigger': '#taketime',//标签id
+		    'type': 'date',//date 调出日期选择 datetime 调出日期时间选择 time 调出时间选择 ym 调出年月选择
+		    'minDate':'1950-1-1',//最小日期 注意：该值会覆盖标签内定义的日期范围
+		});
+	</script>
+	</body>
+</html>

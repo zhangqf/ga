@@ -1,0 +1,31 @@
+*{
+	padding:0;
+	margin:0;
+}
+html{
+	font-size: 13.33vw;
+	height:100%;
+}
+body{
+	height:100%;
+	font-family: "[PingFang]";	
+}
+.ui-container{
+	width:100%;
+	height:100%;
+	background: url(../images/bg2.jpg) no-repeat;
+	background-size: cover;
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+.ui-container a{
+	padding:0.2rem 1.16rem;
+	border-radius: 0.12rem;
+	color:#66a3fe;
+	font-size: 0.33rem;
+	background: #fff;
+	text-decoration: none;
+	margin-bottom: 0.98rem;
+}
